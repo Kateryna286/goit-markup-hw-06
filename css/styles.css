@@ -651,7 +651,7 @@ button {
   margin-left: 70px;
 }
 
-.footer-sn-title {
+.footer-titles {
   margin-bottom: 20px;
 
   color: var(--white-additional-color);
@@ -681,6 +681,63 @@ button {
 
 .footer-circle-icons li:last-child {
   margin-right: 0;
+}
+
+/* Блок с подпиской */
+
+.footer-subscribe {
+  margin-left: 93px;
+}
+
+.footer-sub-main {
+  display: flex;
+  align-items: center;
+}
+
+.footer-sub-field {
+  width: 358px;
+  height: 50px;
+
+  padding: 0;
+  padding-left: 16px;
+
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+
+.footer-sub-btn {
+  display: flex;
+  align-items: center;
+
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  padding-left: 29px;
+
+  background-color: var(--accent-color);
+  color: #ffffff;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+}
+
+.footer-sub-btn svg {
+  margin-left: 10px;
+}
+
+/* Меняет цвет текста в Placeholder */
+
+input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* Портфолио */
@@ -866,7 +923,10 @@ button {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+
   opacity: 1;
+
+  transition: opacity 250ms ease-in;
 }
 
 .backdrop.is-hidden {
@@ -910,4 +970,71 @@ button {
 
 .modal-close-svg {
   background-color: #fff;
+}
+
+.modal-fields {
+  display: block;
+}
+
+.modal-header {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.modal-fields-titles {
+  margin-bottom: 4px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+
+  letter-spacing: 0.01em;
+
+  color: #757575;
+}
+
+.input-modal {
+  margin-bottom: 10px;
+  width: 448px;
+  min-height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+/* .modal-fields {
+  position: relative;
+}
+
+.modal-fields > .icon-modal {
+  position: absolute;
+  top: 29px;
+  left: 14px;
+
+  fill: #212121;
+} */
+
+.modal-send-btn {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 165px;
+  bottom: 40px;
+
+  background: #188ce8;
+  border-radius: 4px;
+  color: #fff;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
 }

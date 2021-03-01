@@ -458,7 +458,7 @@
 
           <!-- Блок со ссылками на соц.сети -->
           <div class="footer-sn">
-            <p class="footer-sn-title">присоединяйтесь</p>
+            <p class="footer-titles">присоединяйтесь</p>
             <ul class="footer-circle-icons">
               <li class="footer-sn-items">
                 <a href="" class="circle-button footer-circle-button">
@@ -490,6 +490,31 @@
               </li>
             </ul>
           </div>
+
+          <!-- Блок с подпиской на рассылку -->
+          <div class="footer-subscribe">
+            <form action="">
+              <p class="footer-titles">Подпишитесь на рассылку</p>
+              <div class="footer-sub-main">
+                <label>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="E-mail"
+                    class="footer-sub-field"
+                  />
+                </label>
+                <button type="submit" class="footer-sub-btn">
+                  Подписаться
+                  <svg class="clients-icon-logo" width="24" height="24">
+                    <use
+                      href="./images/symbol-defs-new.svg#icon-send-footer"
+                    ></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
@@ -498,20 +523,55 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est hic optio
-          dicta pariatur nostrum sequi aspernatur itaque dolorem veniam delectus
-          voluptatum eveniet ipsa exercitationem velit, sint, blanditiis
-          obcaecati cum dolores, accusamus culpa sed. Facilis fuga incidunt
-          explicabo eaque? Autem nulla quod sapiente, dolores fugit nostrum
-          accusantium architecto reiciendis quia! Earum quae eligendi incidunt
-          assumenda labore debitis molestiae! Itaque blanditiis minus ipsam
-          illum maiores quam ipsa, omnis sapiente aut tempora quia officia
-          explicabo officiis facere, quos tenetur, esse odit saepe laudantium?
-          Iusto incidunt nihil laborum similique nostrum est ratione asperiores
-          quisquam sit? Fuga quisquam quae velit corrupti debitis voluptate
-          quibusdam minus.
-        </p>
+        <form action="">
+          <p class="modal-header">Оставьте свои данные, мы вам перезвоним</p>
+          <label class="modal-fields">
+            <p class="modal-fields-titles">Имя</p>
+
+            <svg class="icon-modal" width="12" height="12">
+              <use href="./images/symbol-defs-new.svg#icon-name-modal"></use>
+            </svg>
+
+            <input
+              type="Name"
+              name="name"
+              placeholder="Имя"
+              class="input-modal"
+            />
+          </label>
+          <label class="modal-fields">
+            <p class="modal-fields-titles">Телефон</p>
+            <input
+              type="Phone"
+              name="tel"
+              placeholder="Телефон"
+              class="input-modal"
+            />
+          </label>
+          <label class="modal-fields">
+            <p class="modal-fields-titles">Почта</p>
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              class="input-modal"
+            />
+          </label>
+          <label class="modal-fields">
+            <p class="modal-fields-titles">Комментарий</p>
+            <textarea
+              name="feedback"
+              rows="5"
+              placeholder="Введите текст"
+              class="input-modal"
+            ></textarea>
+          </label>
+          <label>
+            <input type="checkbox" name="agreement" value="reading" />
+            <span>Соглашаюсь с рассылкой и принимаю Условия договора</span>
+          </label>
+          <button class="modal-send-btn" type="submit">Отправить</button>
+        </form>
         <button class="modal-close-button" data-modal-close>
           <svg class="modal-close-svg" width="30" height="30">
             <use href="./images/logo-svg/symbol-defs.svg#icon-close"></use>
