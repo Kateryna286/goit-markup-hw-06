@@ -730,6 +730,8 @@ button {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
+
+  cursor: pointer;
 }
 
 .footer-sub-btn svg {
@@ -978,8 +980,11 @@ button {
 }
 
 .group-fields {
-  text-align: start;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 20px;
+
+  text-align: start;
 }
 
 .modal-labels {
@@ -1012,6 +1017,8 @@ button {
   box-sizing: border-box;
   border-radius: 4px;
 
+  color: #212121;
+
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1020,7 +1027,7 @@ button {
   top: 11px;
   left: 12px;
 
-  fill: #212121;
+  fill: currentColor;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1030,23 +1037,12 @@ button {
   border-color: var(--accent-color);
 }
 
-.modal-input:focus + .modal-icon {
-  fill: var(--accent-color);
-}
-
+.modal-input:focus + .modal-icon,
 .modal-input:hover + .modal-icon {
   fill: var(--accent-color);
 }
 
-/* Policy */
-
-.group-policy {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin-bottom: 30px;
-}
+/* Поле "комментарии" */
 
 textarea {
   resize: none;
@@ -1066,10 +1062,24 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-agree {
+/* Policy */
+
+.group-policy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 30px;
+}
+
+.modal-checkbox {
+  /* display: none; */
+}
+
+/* .modal-agree {
   white-space: nowrap;
   justify-content: center;
-}
+} */
 
 .modal-agree-text {
   margin-left: 8px;
