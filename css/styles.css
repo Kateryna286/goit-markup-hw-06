@@ -1086,7 +1086,7 @@ textarea {
 .modal-checked-icon {
   position: absolute;
   top: 4px;
-  left: 11px;
+  left: 12px;
 
   background-color: var(--accent-color);
   opacity: 0%;
@@ -1104,7 +1104,7 @@ textarea {
   opacity: 100%;
 }
 
-.modal-checkbox:checked + .modal-checkbox-icon {
+.modal-checkbox:checked ~ .modal-checkbox-icon {
   opacity: 0%;
 }
 
