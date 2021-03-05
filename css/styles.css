@@ -1104,6 +1104,10 @@ textarea {
   opacity: 100%;
 }
 
+.modal-checkbox:checked + .modal-checkbox-icon {
+  opacity: 0%;
+}
+
 /* Текст соглашения */
 
 .modal-agree-text {
